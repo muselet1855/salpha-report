@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAlpha 리포트 — 2026-05-25 14:20</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0d0d0d; color: #ddd;
+      font-family: 'Consolas', 'Menlo', monospace; font-size: 13px;
+      padding: 24px;
+    }
+    h1 { color: #eee; font-size: 18px; margin-bottom: 4px; }
+    h2 { color: #aaa; font-size: 13px; font-weight: normal;
+          border-bottom: 1px solid #2a2a2a; padding-bottom: 8px;
+          margin: 28px 0 14px; letter-spacing: 2px; }
+    .meta { color: #555; font-size: 12px; margin-bottom: 28px; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    thead tr { background: #1a1a1a; }
+    th {
+      color: #888; font-weight: normal; padding: 8px 8px;
+      text-align: right; white-space: nowrap;
+      border-bottom: 1px solid #333; cursor: pointer;
+      user-select: none;
+    }
+    th:first-child, th:nth-child(2) { text-align: left; }
+    th:hover { color: #ccc; }
+    tr:hover { background: #161616; }
+    .legend {
+      color: #555; font-size: 11px; margin-top: 16px; line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>SAlpha Watchlist 리포트</h1>
+  <div class="meta">생성: 2026-05-25 14:20 &nbsp;|&nbsp; 20개 종목</div>
+
+  <h2>▸ WATCHLIST 비교</h2>
+  <table id="mainTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">티커</th>
+        <th onclick="sortTable(1)">최근분기</th>
+        <th onclick="sortTable(2)">매출</th>
+        <th onclick="sortTable(3)">Rev YoY</th>
+        <th onclick="sortTable(4)">OP%</th>
+        <th onclick="sortTable(5)">EPS YoY</th>
+        <th onclick="sortTable(6)">최근가</th>
+        <th onclick="sortTable(7)">vs 200d</th>
+        <th onclick="sortTable(8)">52w 고점</th>
+        <th onclick="sortTable(9)">TTM P/E</th>
+        <th onclick="sortTable(10)">P/S</th>
+        <th onclick="sortTable(11)">RSI(14)</th>
+        <th onclick="sortTable(12)">EPS가속</th>
+        <th onclick="sortTable(13)">저점반등</th>
+        <th onclick="sortTable(14)">등급</th>
+        <th>점수 내역</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#eab308;font-weight:bold;padding:6px 10px">MSFT</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$82.9B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+18.3%</span></td>
+          <td style="text-align:right;padding:6px 8px">46.3%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+23.4%</span></td>
+          <td style="text-align:right;padding:6px 8px">$418.57</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-9.1%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-22.8%</span></td>
+          <td style="text-align:right;padding:6px 8px">24.9x</td>
+          <td style="text-align:right;padding:6px 8px">9.8x</td>
+          <td style="text-align:right;padding:6px 8px">54</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-36pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+17%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a1a00;color:#eab308;border:1px solid #eab308;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">BUY(역추세)</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +2  [펀더멘털 +2 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#06b6d4;font-weight:bold;padding:6px 10px">AAPL</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-28</td>
+          <td style="text-align:right;padding:6px 8px">$111.2B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+16.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">32.3%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+21.8%</span></td>
+          <td style="text-align:right;padding:6px 8px">$308.82</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+18.1%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#888">+0.0%</span></td>
+          <td style="text-align:right;padding:6px 8px">37.4x</td>
+          <td style="text-align:right;padding:6px 8px">10.1x</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444;font-weight:bold">90</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#888">→+3pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+58%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1a1a;color:#06b6d4;border:1px solid #06b6d4;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">HOLD</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +3  [펀더멘털 +2 / 추세 +2 / P/E +0 / RSI -1 / EPS가속 +0 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#22c55e;font-weight:bold;padding:6px 10px">AMZN</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$181.5B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+16.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">13.1%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+74.8%</span></td>
+          <td style="text-align:right;padding:6px 8px">$266.32</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+15.5%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-3.2%</span></td>
+          <td style="text-align:right;padding:6px 8px">31.9x</td>
+          <td style="text-align:right;padding:6px 8px">3.9x</td>
+          <td style="text-align:right;padding:6px 8px">43</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">↑+70pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+34%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1f0d;color:#22c55e;border:1px solid #22c55e;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">BUY</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +5  [펀더멘털 +2 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#06b6d4;font-weight:bold;padding:6px 10px">EQIX</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$2.4B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+9.8%</span></td>
+          <td style="text-align:right;padding:6px 8px">23.6%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+20.0%</span></td>
+          <td style="text-align:right;padding:6px 8px">$1079.79</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+24.4%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-3.2%</span></td>
+          <td style="text-align:right;padding:6px 8px">74.7x</td>
+          <td style="text-align:right;padding:6px 8px">11.3x</td>
+          <td style="text-align:right;padding:6px 8px">49</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">↑+520pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+49%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1a1a;color:#06b6d4;border:1px solid #06b6d4;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">HOLD</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +4  [펀더멘털 +1 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#ef4444;font-weight:bold;padding:6px 10px">MARA</td>
+          <td style="color:#aaa;padding:6px 8px">2025-12-31</td>
+          <td style="text-align:right;padding:6px 8px">$202M</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-5.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">-697.2%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-374.9%</span></td>
+          <td style="text-align:right;padding:6px 8px">$13.81</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+8.7%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-39.5%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">적자</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">적자</span></td>
+          <td style="text-align:right;padding:6px 8px">66</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-211pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+105%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a0a0a;color:#ef4444;border:1px solid #ef4444;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">AVOID</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 -2  [펀더멘털 -2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#666666;font-weight:bold;padding:6px 10px">HDSN</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$nan</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#888">+nan%</span></td>
+          <td style="text-align:right;padding:6px 8px">nan%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-83.3%</span></td>
+          <td style="text-align:right;padding:6px 8px">$5.06</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-33.2%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-51.5%</span></td>
+          <td style="text-align:right;padding:6px 8px">15.8x</td>
+          <td style="text-align:right;padding:6px 8px">1.5x</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e;font-weight:bold">29</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-363pp</span></td>
+          <td style="text-align:right;padding:6px 8px">+5%</td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#161616;color:#666666;border:1px solid #666666;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">DATA</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">데이터 부족</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#ef4444;font-weight:bold;padding:6px 10px">ARAY</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$105M</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-7.4%</span></td>
+          <td style="text-align:right;padding:6px 8px">-8.7%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#888">+nan%</span></td>
+          <td style="text-align:right;padding:6px 8px">$0.31</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-67.6%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-83.2%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">적자</span></td>
+          <td style="text-align:right;padding:6px 8px">0.0x</td>
+          <td style="text-align:right;padding:6px 8px">35</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-850pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+15%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a0a0a;color:#ef4444;border:1px solid #ef4444;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">AVOID</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 -3  [펀더멘털 -2 / 추세 -1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#ef4444;font-weight:bold;padding:6px 10px">UPS</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$21.2B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-1.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">6.0%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-27.1%</span></td>
+          <td style="text-align:right;padding:6px 8px">$101.02</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+3.4%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-15.8%</span></td>
+          <td style="text-align:right;padding:6px 8px">16.3x</td>
+          <td style="text-align:right;padding:6px 8px">1.0x</td>
+          <td style="text-align:right;padding:6px 8px">63</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-32pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+22%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a0a0a;color:#ef4444;border:1px solid #ef4444;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">AVOID</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 -2  [펀더멘털 -2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#ef4444;font-weight:bold;padding:6px 10px">GNW</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$1.8B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-0.5%</span></td>
+          <td style="text-align:right;padding:6px 8px">nan%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-7.7%</span></td>
+          <td style="text-align:right;padding:6px 8px">$9.07</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+4.8%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-2.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">17.1x</td>
+          <td style="text-align:right;padding:6px 8px">0.5x</td>
+          <td style="text-align:right;padding:6px 8px">57</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-508pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+35%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a0a0a;color:#ef4444;border:1px solid #ef4444;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">AVOID</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 -2  [펀더멘털 -2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#06b6d4;font-weight:bold;padding:6px 10px">MCD</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$6.5B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+9.4%</span></td>
+          <td style="text-align:right;padding:6px 8px">45.3%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+6.9%</span></td>
+          <td style="text-align:right;padding:6px 8px">$282.27</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-8.3%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-17.2%</span></td>
+          <td style="text-align:right;padding:6px 8px">23.3x</td>
+          <td style="text-align:right;padding:6px 8px">0.0x</td>
+          <td style="text-align:right;padding:6px 8px">47</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#888">→-1pp</span></td>
+          <td style="text-align:right;padding:6px 8px">+3%</td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1a1a;color:#06b6d4;border:1px solid #06b6d4;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">HOLD</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +1  [펀더멘털 +1 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 +0 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#06b6d4;font-weight:bold;padding:6px 10px">PEP</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-21</td>
+          <td style="text-align:right;padding:6px 8px">$19.4B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+8.5%</span></td>
+          <td style="text-align:right;padding:6px 8px">16.5%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+27.8%</span></td>
+          <td style="text-align:right;padding:6px 8px">$150.57</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-0.1%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-11.7%</span></td>
+          <td style="text-align:right;padding:6px 8px">23.6x</td>
+          <td style="text-align:right;padding:6px 8px">2.2x</td>
+          <td style="text-align:right;padding:6px 8px">40</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-39pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+18%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1a1a;color:#06b6d4;border:1px solid #06b6d4;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">HOLD</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +1  [펀더멘털 +1 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#06b6d4;font-weight:bold;padding:6px 10px">CPRX</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$149M</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+5.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">49.0%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+11.1%</span></td>
+          <td style="text-align:right;padding:6px 8px">$31.26</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+33.4%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-0.1%</span></td>
+          <td style="text-align:right;padding:6px 8px">18.0x</td>
+          <td style="text-align:right;padding:6px 8px">6.6x</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444;font-weight:bold">87</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">↑+18pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+63%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1a1a;color:#06b6d4;border:1px solid #06b6d4;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">HOLD</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +3  [펀더멘털 +1 / 추세 +2 / P/E +0 / RSI -1 / EPS가속 +1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#ef4444;font-weight:bold;padding:6px 10px">LODE</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$313,456</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-60.1%</span></td>
+          <td style="text-align:right;padding:6px 8px">-2853.0%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#888">+nan%</span></td>
+          <td style="text-align:right;padding:6px 8px">$3.82</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+18.3%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-16.8%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#555">-</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#555">-</span></td>
+          <td style="text-align:right;padding:6px 8px">64</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-327pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+69%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a0a0a;color:#ef4444;border:1px solid #ef4444;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">AVOID</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 -1  [펀더멘털 -2 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#22c55e;font-weight:bold;padding:6px 10px">AWR</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$169M</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+14.3%</span></td>
+          <td style="text-align:right;padding:6px 8px">30.4%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+8.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">$76.64</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+3.1%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-5.1%</span></td>
+          <td style="text-align:right;padding:6px 8px">22.3x</td>
+          <td style="text-align:right;padding:6px 8px">4.4x</td>
+          <td style="text-align:right;padding:6px 8px">55</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">↑+10pp</span></td>
+          <td style="text-align:right;padding:6px 8px">+9%</td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1f0d;color:#22c55e;border:1px solid #22c55e;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">BUY</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +4  [펀더멘털 +2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#22c55e;font-weight:bold;padding:6px 10px">ALB</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$1.4B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+32.7%</span></td>
+          <td style="text-align:right;padding:6px 8px">16.3%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+inf%</span></td>
+          <td style="text-align:right;padding:6px 8px">$171.58</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+23.9%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-20.4%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">적자</span></td>
+          <td style="text-align:right;padding:6px 8px">3.7x</td>
+          <td style="text-align:right;padding:6px 8px">36</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">↑+1000pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+211%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1f0d;color:#22c55e;border:1px solid #22c55e;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">BUY</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +6  [펀더멘털 +3 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#06b6d4;font-weight:bold;padding:6px 10px">JNJ</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-29</td>
+          <td style="text-align:right;padding:6px 8px">$24.1B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+9.9%</span></td>
+          <td style="text-align:right;padding:6px 8px">nan%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-52.9%</span></td>
+          <td style="text-align:right;padding:6px 8px">$234.34</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+11.2%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-5.7%</span></td>
+          <td style="text-align:right;padding:6px 8px">27.1x</td>
+          <td style="text-align:right;padding:6px 8px">5.9x</td>
+          <td style="text-align:right;padding:6px 8px">68</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-101pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+56%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1a1a;color:#06b6d4;border:1px solid #06b6d4;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">HOLD</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +2  [펀더멘털 +1 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#eab308;font-weight:bold;padding:6px 10px">CELH</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$783M</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+137.7%</span></td>
+          <td style="text-align:right;padding:6px 8px">17.8%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+120.0%</span></td>
+          <td style="text-align:right;padding:6px 8px">$30.12</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-36.6%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-53.6%</span></td>
+          <td style="text-align:right;padding:6px 8px">71.7x</td>
+          <td style="text-align:right;padding:6px 8px">2.6x</td>
+          <td style="text-align:right;padding:6px 8px">38</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">↑+250pp</span></td>
+          <td style="text-align:right;padding:6px 8px">+8%</td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a1a00;color:#eab308;border:1px solid #eab308;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">BUY(역추세)</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +2  [펀더멘털 +3 / 추세 -1 / P/E -1 / RSI +0 / EPS가속 +1 / 반등 +0]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#06b6d4;font-weight:bold;padding:6px 10px">IBM</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$15.9B</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+9.5%</span></td>
+          <td style="text-align:right;padding:6px 8px">nan%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+14.3%</span></td>
+          <td style="text-align:right;padding:6px 8px">$253.84</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-6.0%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-19.4%</span></td>
+          <td style="text-align:right;padding:6px 8px">22.4x</td>
+          <td style="text-align:right;padding:6px 8px">3.5x</td>
+          <td style="text-align:right;padding:6px 8px">68</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-75pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+18%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0d1a1a;color:#06b6d4;border:1px solid #06b6d4;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">HOLD</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +1  [펀더멘털 +1 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#eab308;font-weight:bold;padding:6px 10px">EVER</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$191M</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+14.5%</span></td>
+          <td style="text-align:right;padding:6px 8px">12.3%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+142.9%</span></td>
+          <td style="text-align:right;padding:6px 8px">$18.88</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-10.9%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-32.3%</span></td>
+          <td style="text-align:right;padding:6px 8px">6.4x</td>
+          <td style="text-align:right;padding:6px 8px">1.0x</td>
+          <td style="text-align:right;padding:6px 8px">62</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-207pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+32%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#1a1a00;color:#eab308;border:1px solid #eab308;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">BUY(역추세)</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 +2  [펀더멘털 +2 / 추세 -1 / P/E +1 / RSI +0 / EPS가속 -1 / 반등 +1]</td>
+        </tr>
+        <tr style="border-bottom:1px solid #222">
+          <td style="color:#818cf8;font-weight:bold;padding:6px 10px">BTU</td>
+          <td style="color:#aaa;padding:6px 8px">2026-03-31</td>
+          <td style="text-align:right;padding:6px 8px">$973M</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+3.9%</span></td>
+          <td style="text-align:right;padding:6px 8px">-4.5%</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-200.0%</span></td>
+          <td style="text-align:right;padding:6px 8px">$24.55</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-14.4%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">-37.8%</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">적자</span></td>
+          <td style="text-align:right;padding:6px 8px">0.8x</td>
+          <td style="text-align:right;padding:6px 8px">36</td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#ef4444">↓-135pp</span></td>
+          <td style="text-align:right;padding:6px 8px"><span style="color:#22c55e">+94%</span></td>
+          <td style="text-align:center;padding:6px 8px"><span style="background:#0a0a1a;color:#818cf8;border:1px solid #818cf8;border-radius:4px;padding:2px 8px;font-weight:bold;font-size:12px">WATCH</span></td>
+          <td style="color:#555;font-size:11px;padding:6px 8px">총점 -1  [펀더멘털 +0 / 추세 -1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</td>
+        </tr></tbody>
+  </table>
+
+  <div class="legend">
+    펀더멘털: Rev YoY &gt;20%=+3 / 10~20%=+2 / 5~10%=+1 / &lt;0%=-2 &nbsp;|&nbsp;
+    추세: vs 200d &gt;10%=+2 / 0~10%=+1 / &lt;-10%=-1 &nbsp;|&nbsp;
+    P/E: 섹터별 저평가=+1 / 고평가=-1 &nbsp;|&nbsp;
+    RSI: &lt;30=+1 / &gt;70=-1 &nbsp;|&nbsp;
+    EPS가속: 5pp↑=+1 / 5pp↓=-1 &nbsp;|&nbsp;
+    저점반등: 200일선↓ &amp; 저점+10%↑=+1
+  </div>
+
+  <h2>▸ 투자 추천 등급</h2>
+  
+        <div style="margin-bottom:20px">
+          <div style="background:#0d1f0d;border:1px solid #22c55e;border-radius:4px;
+                      display:inline-block;padding:4px 14px;margin-bottom:8px">
+            <span style="color:#22c55e;font-weight:bold;font-size:14px">[ BUY ]</span>
+          </div>
+          
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #22c55e;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#22c55e;font-weight:bold;font-size:14px">AMZN</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +5  [펀더멘털 +2 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #22c55e;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#22c55e;font-weight:bold;font-size:14px">AWR</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +4  [펀더멘털 +2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #22c55e;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#22c55e;font-weight:bold;font-size:14px">ALB</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +6  [펀더멘털 +3 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</span>
+            </div>
+        </div>
+        <div style="margin-bottom:20px">
+          <div style="background:#1a1a00;border:1px solid #eab308;border-radius:4px;
+                      display:inline-block;padding:4px 14px;margin-bottom:8px">
+            <span style="color:#eab308;font-weight:bold;font-size:14px">[ BUY(역추세) ]</span>
+          </div>
+          
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #eab308;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#eab308;font-weight:bold;font-size:14px">MSFT</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +2  [펀더멘털 +2 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #eab308;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#eab308;font-weight:bold;font-size:14px">CELH</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +2  [펀더멘털 +3 / 추세 -1 / P/E -1 / RSI +0 / EPS가속 +1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #eab308;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#eab308;font-weight:bold;font-size:14px">EVER</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +2  [펀더멘털 +2 / 추세 -1 / P/E +1 / RSI +0 / EPS가속 -1 / 반등 +1]</span>
+            </div>
+        </div>
+        <div style="margin-bottom:20px">
+          <div style="background:#0d1a1a;border:1px solid #06b6d4;border-radius:4px;
+                      display:inline-block;padding:4px 14px;margin-bottom:8px">
+            <span style="color:#06b6d4;font-weight:bold;font-size:14px">[ HOLD ]</span>
+          </div>
+          
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #06b6d4;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#06b6d4;font-weight:bold;font-size:14px">AAPL</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +3  [펀더멘털 +2 / 추세 +2 / P/E +0 / RSI -1 / EPS가속 +0 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #06b6d4;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#06b6d4;font-weight:bold;font-size:14px">EQIX</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +4  [펀더멘털 +1 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 +1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #06b6d4;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#06b6d4;font-weight:bold;font-size:14px">MCD</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +1  [펀더멘털 +1 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 +0 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #06b6d4;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#06b6d4;font-weight:bold;font-size:14px">PEP</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +1  [펀더멘털 +1 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #06b6d4;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#06b6d4;font-weight:bold;font-size:14px">CPRX</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +3  [펀더멘털 +1 / 추세 +2 / P/E +0 / RSI -1 / EPS가속 +1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #06b6d4;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#06b6d4;font-weight:bold;font-size:14px">JNJ</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +2  [펀더멘털 +1 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #06b6d4;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#06b6d4;font-weight:bold;font-size:14px">IBM</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 +1  [펀더멘털 +1 / 추세 +0 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</span>
+            </div>
+        </div>
+        <div style="margin-bottom:20px">
+          <div style="background:#0a0a1a;border:1px solid #818cf8;border-radius:4px;
+                      display:inline-block;padding:4px 14px;margin-bottom:8px">
+            <span style="color:#818cf8;font-weight:bold;font-size:14px">[ WATCH ]</span>
+          </div>
+          
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #818cf8;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#818cf8;font-weight:bold;font-size:14px">BTU</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 -1  [펀더멘털 +0 / 추세 -1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</span>
+            </div>
+        </div>
+        <div style="margin-bottom:20px">
+          <div style="background:#1a0a0a;border:1px solid #ef4444;border-radius:4px;
+                      display:inline-block;padding:4px 14px;margin-bottom:8px">
+            <span style="color:#ef4444;font-weight:bold;font-size:14px">[ AVOID ]</span>
+          </div>
+          
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #ef4444;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#ef4444;font-weight:bold;font-size:14px">MARA</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 -2  [펀더멘털 -2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #ef4444;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#ef4444;font-weight:bold;font-size:14px">ARAY</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 -3  [펀더멘털 -2 / 추세 -1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +1]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #ef4444;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#ef4444;font-weight:bold;font-size:14px">UPS</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 -2  [펀더멘털 -2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #ef4444;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#ef4444;font-weight:bold;font-size:14px">GNW</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 -2  [펀더멘털 -2 / 추세 +1 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</span>
+            </div>
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #ef4444;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#ef4444;font-weight:bold;font-size:14px">LODE</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">총점 -1  [펀더멘털 -2 / 추세 +2 / P/E +0 / RSI +0 / EPS가속 -1 / 반등 +0]</span>
+            </div>
+        </div>
+        <div style="margin-bottom:20px">
+          <div style="background:#161616;border:1px solid #666666;border-radius:4px;
+                      display:inline-block;padding:4px 14px;margin-bottom:8px">
+            <span style="color:#666666;font-weight:bold;font-size:14px">[ DATA ]</span>
+          </div>
+          
+            <div style="background:#161616;border:1px solid #2a2a2a;border-left:3px solid #666666;
+                        border-radius:4px;padding:10px 14px;margin:6px 0">
+              <span style="color:#666666;font-weight:bold;font-size:14px">HDSN</span>
+              <span style="color:#555;font-size:11px;margin-left:12px">데이터 부족</span>
+            </div>
+        </div>
+
+  <div class="legend" style="margin-top:24px">
+    BUY=총점≥4 &amp; 펀더멘털≥+2 &nbsp;|&nbsp;
+    BUY(역추세)=총점2~3 &amp; 펀더멘털≥+2 &amp; 추세≤0 &nbsp;|&nbsp;
+    HOLD=총점1~3 &nbsp;|&nbsp; WATCH=총점0~-1 &nbsp;|&nbsp; AVOID=총점≤-2
+  </div>
+
+  <script>
+    let sortDir = {};
+    function sortTable(col) {
+      const tb = document.getElementById('mainTable').tBodies[0];
+      const rows = Array.from(tb.rows);
+      sortDir[col] = !sortDir[col];
+      rows.sort((a, b) => {
+        const A = a.cells[col].innerText.trim();
+        const B = b.cells[col].innerText.trim();
+        const nA = parseFloat(A.replace(/[^0-9.\-+]/g,''));
+        const nB = parseFloat(B.replace(/[^0-9.\-+]/g,''));
+        const cmp = isNaN(nA)||isNaN(nB) ? A.localeCompare(B) : nA - nB;
+        return sortDir[col] ? cmp : -cmp;
+      });
+      rows.forEach(r => tb.appendChild(r));
+    }
+  </script>
+</body>
+</html>
